@@ -10,8 +10,6 @@ public class Hook extends Config {
     public static String baseUrl=System.getProperty("env");
     public static String browserType=System.getProperty("browser");
 
-
-
     @Before
     public void openBrowser(){
         if(Strings.isNullOrEmpty(browserType)){
@@ -23,19 +21,19 @@ public class Hook extends Config {
         driver=initDriver(browserType);
         switch (baseUrl){
             case "qa":
-                url="http://qa.taltektc.com/";
+                url= "http://qa.taltektc.com";
                 break;
             case "stage":
-                url="http://stage.taltektc.com/";
+                url= "http://stage.taltektc.com";
                 break;
             case "prod":
-                url="http://taltektc.com/";
+                url= "http://taltektc.com";
                 break;
         }
         driver.get(url);
     }
     @After
     public void tearDown(){
-       // driver.quit();
+        // driver.quit();
     }
 }
