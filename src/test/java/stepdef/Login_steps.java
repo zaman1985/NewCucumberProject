@@ -41,4 +41,15 @@ public class Login_steps extends Config {
     public void iWillVerifyIDidnTSuccessfullyLoggedIntoExistingAccount() {
         login.setErrorMessage();
     }
+
+    @And("I click on Create New Account button")
+    public void iClickOnCreateNewAccountButton() {
+        login.clickNewAccountButton();
+    }
+
+    @And("I login with newly created studentId Info")
+    public void iLoginWithNewlyCreatedStudentIdInfo() {
+        login.inputEmailOrId(global_studentId);
+        login.inputPassword(global_studentPassword);
+    }
 }

@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class Config {
+public class Config extends TestData{
     public static WebDriver driver;
     public static WebDriver initDriver(String driverType){
         if(driverType.equalsIgnoreCase("ch")){

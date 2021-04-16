@@ -24,6 +24,9 @@ public class Login_page {
     @FindBy(how=How.XPATH,using = "//*[@id=\"error_message\"]/div/h5")
     public WebElement errorMessage;
 
+    @FindBy(how=How.XPATH,using = "//*[@class=\"new-account\"]")
+    public WebElement createNewAccount;
+
 
     public void inputEmailOrId(String studentEmailOrId){
         EmailOrId.sendKeys(studentEmailOrId);
@@ -42,5 +45,8 @@ public class Login_page {
         Assert.assertEquals(actual,exp);
 
 
+    }
+    public void clickNewAccountButton(){
+        createNewAccount.click();
     }
 }

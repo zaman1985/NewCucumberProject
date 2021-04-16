@@ -11,4 +11,9 @@ public class Profile_steps extends Config {
         profile.verifyHomepagelogo();
 
     }
+
+    @Then("I will verify my profile info")
+    public void iWillVerifyMyProfileInfo() {
+        profile.verifyStudentInfo();
+    }
 }

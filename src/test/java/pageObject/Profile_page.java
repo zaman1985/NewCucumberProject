@@ -1,6 +1,7 @@
 package pageObject;
 
 
+import base.TestData;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,11 +16,25 @@ public class Profile_page {
 @FindBy(how= How.XPATH,using = "//*[@id=\"profile_form\"]/h5")
     public WebElement verifyHomepage;
 
+@FindBy(how=How.NAME,using = "firstName")
+public WebElement verifyFirstName;
+
+@FindBy(how=How.NAME,using = "lastName")
+public WebElement verifyLastName;
+
+@FindBy(how=How.NAME,using = "email")
+public WebElement verifyEmail;
+
     public void verifyHomepagelogo(){
         String exp="Update Profile";
         String actual= verifyHomepage.getText();
         System.out.println(actual);
         Assert.assertEquals(actual,exp);
+    }
+    public void verifyStudentInfo(){
+        Assert.assertEquals(verifyFirstName.getAttribute("value"), TestData.global_studentFirstName);
+        Assert.assertEquals(verifyLastName.getAttribute("value"),TestData.global_studentLastName);
+        Assert.assertEquals(verifyEmail.getAttribute("value"),TestData.global_studentEmail);
     }
 
 }
