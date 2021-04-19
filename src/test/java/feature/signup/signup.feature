@@ -1,6 +1,6 @@
 Feature: Signup
 
-  @regression @smoke @signup
+  @regression @smoke
   Scenario: Sign up
     Given I am at talentTEK Home Page
     And I click on Create New Account button
@@ -22,5 +22,7 @@ Feature: Signup
     And I login with newly created studentId Info
     When I click on Log In button
     Then I will verify my profile info
+    Then I click on WebTable option from profile page
+    And I will verify firstName,lastName and email from WebTable recently created
 
 

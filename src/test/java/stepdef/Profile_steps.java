@@ -16,4 +16,9 @@ public class Profile_steps extends Config {
     public void iWillVerifyMyProfileInfo() {
         profile.verifyStudentInfo();
     }
+
+    @Then("I click on WebTable option from profile page")
+    public void iClickOnWebTableOptionFromProfilePage() {
+        profile.ClickOnWebTable();
+    }
 }

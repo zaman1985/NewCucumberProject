@@ -25,6 +25,9 @@ public WebElement verifyLastName;
 @FindBy(how=How.NAME,using = "email")
 public WebElement verifyEmail;
 
+@FindBy(how=How.XPATH,using = "//a[@href=\"http://qa.taltektc.com/home/web_table\"]")
+public WebElement clickWebTable;
+
     public void verifyHomepagelogo(){
         String exp="Update Profile";
         String actual= verifyHomepage.getText();
@@ -35,6 +38,9 @@ public WebElement verifyEmail;
         Assert.assertEquals(verifyFirstName.getAttribute("value"), TestData.global_studentFirstName);
         Assert.assertEquals(verifyLastName.getAttribute("value"),TestData.global_studentLastName);
         Assert.assertEquals(verifyEmail.getAttribute("value"),TestData.global_studentEmail);
+    }
+    public void ClickOnWebTable(){
+        clickWebTable.click();
     }
 
 }

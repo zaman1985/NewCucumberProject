@@ -1,2 +1,4 @@
+pageObject\WebTableHandeling.class
 stepdef\Profile_steps.class
 stepdef\Signup_steps.class
+stepdef\Webtable_steps.class

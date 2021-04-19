@@ -8,7 +8,7 @@ Feature: Login
     When I click on Log In button
     Then I will verify I successfully logged into my existing account
 
-  @regression @login
+  @regression @login @smoke
   Scenario: Login with invalid email and valid password
     Given I am at talentTEK Home Page
    And I enter invalid email address
