@@ -1,0 +1,533 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-18T14:53:10.408Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6707000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdef.Hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login with valid email and password",
+        "description": "",
+        "id": "login;login-with-valid-email-and-password",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdef.Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 58000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am at talentTEK Home Page",
+            "match": {
+              "location": "stepdef.Login_steps.iAmAtTalentTEKHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 164000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter valid email address",
+            "match": {
+              "location": "stepdef.Login_steps.iEnterValidEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter valid password",
+            "match": {
+              "location": "stepdef.Login_steps.iEnterValidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on Log In button",
+            "match": {
+              "location": "stepdef.Login_steps.iClickOnLogInButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 288000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I will verify I successfully logged into my existing account",
+            "match": {
+              "location": "stepdef.Profile_steps.iWillVerifyISuccessfullyLoggedIntoMyExistingAccount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-18T14:53:17.916Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2388000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdef.Hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login with invalid email and valid password",
+        "description": "",
+        "id": "login;login-with-invalid-email-and-valid-password",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdef.Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am at talentTEK Home Page",
+            "match": {
+              "location": "stepdef.Login_steps.iAmAtTalentTEKHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 117000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter invalid email address",
+            "match": {
+              "location": "stepdef.Login_steps.iEnterInvalidEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter valid password",
+            "match": {
+              "location": "stepdef.Login_steps.iEnterValidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on Log In button",
+            "match": {
+              "location": "stepdef.Login_steps.iClickOnLogInButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I will verify I didn\u0027t successfully logged into existing account",
+            "match": {
+              "location": "stepdef.Login_steps.iWillVerifyIDidnTSuccessfullyLoggedIntoExistingAccount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/login/signin.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-18T14:53:20.727Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2362000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdef.Hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Sign up",
+        "description": "",
+        "id": "signup;sign-up",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdef.Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am at talentTEK Home Page",
+            "match": {
+              "location": "stepdef.Login_steps.iAmAtTalentTEKHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 259000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Create New Account button",
+            "match": {
+              "location": "stepdef.Login_steps.iClickOnCreateNewAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1366000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I filled out the form with valid information",
+            "match": {
+              "location": "stepdef.Signup_steps.iFilledOutTheFormWithValidInformation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I clicked on agree checkbox",
+            "match": {
+              "location": "stepdef.Signup_steps.iClickedOnAgreeCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click Create My Account button",
+            "match": {
+              "location": "stepdef.Signup_steps.iClickCreateMyAccountButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 149000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I will verify Thank you message",
+            "match": {
+              "location": "stepdef.Signup_steps.iWillVerifyThankYouMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-18T14:53:25.042Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2420000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdef.Hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Sign up and then sign back in with studentId",
+        "description": "",
+        "id": "signup;sign-up-and-then-sign-back-in-with-studentid",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdef.Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am at talentTEK Home Page",
+            "match": {
+              "location": "stepdef.Login_steps.iAmAtTalentTEKHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 254000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on Create New Account button",
+            "match": {
+              "location": "stepdef.Login_steps.iClickOnCreateNewAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1076000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I filled out the form with valid information",
+            "match": {
+              "location": "stepdef.Signup_steps.iFilledOutTheFormWithValidInformation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I clicked on agree checkbox",
+            "match": {
+              "location": "stepdef.Signup_steps.iClickedOnAgreeCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click Create My Account button",
+            "match": {
+              "location": "stepdef.Signup_steps.iClickCreateMyAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I will store the dynamic studentId",
+            "match": {
+              "location": "stepdef.Signup_steps.iWillStoreTheDynamicStudentId()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 201000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click on Login Link",
+            "match": {
+              "location": "stepdef.Signup_steps.iClickOnLoginLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I login with newly created studentId Info",
+            "match": {
+              "location": "stepdef.Login_steps.iLoginWithNewlyCreatedStudentIdInfo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on Log In button",
+            "match": {
+              "location": "stepdef.Login_steps.iClickOnLogInButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 375000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I will verify my profile info",
+            "match": {
+              "location": "stepdef.Profile_steps.iWillVerifyMyProfileInfo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 263000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click on WebTable option from profile page",
+            "match": {
+              "location": "stepdef.Profile_steps.iClickOnWebTableOptionFromProfilePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 256000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I will verify firstName,lastName and email from WebTable recently created",
+            "match": {
+              "location": "stepdef.Webtable_steps.iWillVerifyFirstNameLastNameAndEmailFromWebTableRecentlyCreated()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@signup"
+          }
+        ]
+      }
+    ],
+    "name": "Signup",
+    "description": "",
+    "id": "signup",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/signup/signup.feature",
+    "tags": []
+  }
+]
